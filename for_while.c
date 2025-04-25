@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-For¹® ¿¹Á¦_!±¸ÇÏ±â
+//Forë¬¸ ì˜ˆì œ_!êµ¬í•˜ê¸°
 int main()
 {
 	int total = 0;
 	int i, num;
-	printf("0ºÎÅÍ num±îÁöÀÇ µ¡¼À, numÀº? ");
+	printf("0ë¶€í„° numê¹Œì§€ì˜ ë§ì…ˆ, numì€? ");
 	scanf_s("%d", &num);
 
 	for (i = 0; i < num + 1; i++)
 		total += i;
 
-	printf("%d!ÀÇ °ª: %d \n", num, total);
+	printf("%d!ì˜ ê°’: %d \n", num, total);
 	return 0;
 }
 
-±¸±¸´Ü for¹® ±¸Çö
+//êµ¬êµ¬ë‹¨ forë¬¸ êµ¬í˜„
 int main()
 {
 	int cur, is;
@@ -29,34 +29,34 @@ int main()
 	return 0;
 }
 
-if¹® ¿¹Á¦_IfBasic.c
+//ifë¬¸ ì˜ˆì œ_IfBasic.c
 int main()
 {
 	int num;
-	printf("Á¤¼ö ÀÔ·Â: ");
+	printf("ì •ìˆ˜ ì…ë ¥: ");
 	scanf_s("%d", &num);
 
-	if (num < 0)//numÀÌ 0º¸´Ù ÀÛÀ¸¸é ¾Æ·¡ÀÇ ¹®Àå ½ÇÇà
-		printf("ÀÔ·Â °ªÀº 0º¸´Ù ÀÛ´Ù. \n");
-	if (num > 0)//numÀÌ 0º¸´Ù Å©¸é ¾Æ·¡ÀÇ ¹®Àå ½ÇÇà
-		printf("ÀÔ·Â °ªÀº 0º¸´Ù Å©´Ù. \n");
-	if (num == 0)//numÀÌ 0ÀÌ¸é ¾Æ·¡ÀÇ ¹®Àå ½ÇÇà
-		printf("ÀÔ·Â °ªÀº 0ÀÌ´Ù. \n");
+	if (num < 0)//numì´ 0ë³´ë‹¤ ì‘ìœ¼ë©´ ì•„ë˜ì˜ ë¬¸ì¥ ì‹¤í–‰
+		printf("ì…ë ¥ ê°’ì€ 0ë³´ë‹¤ ì‘ë‹¤. \n");
+	if (num > 0)//numì´ 0ë³´ë‹¤ í¬ë©´ ì•„ë˜ì˜ ë¬¸ì¥ ì‹¤í–‰
+		printf("ì…ë ¥ ê°’ì€ 0ë³´ë‹¤ í¬ë‹¤. \n");
+	if (num == 0)//numì´ 0ì´ë©´ ì•„ë˜ì˜ ë¬¸ì¥ ì‹¤í–‰
+		printf("ì…ë ¥ ê°’ì€ 0ì´ë‹¤. \n");
 
 	return 0;
 }
 
-°è»ê±â ±âÃÊ if¹®_CalOne.c
+//ê³„ì‚°ê¸° ê¸°ì´ˆ ifë¬¸_CalOne.c
 int main()
 {
 	int opt;
 	double num1, num2;
 	double result;
 
-	printf("1.µ¡¼À 2.»¬¼À 3.°ö¼À 4.³Ê´°¼À \n");
-	printf("¼±ÅÃ? ");
+	printf("1.ë§ì…ˆ 2.ëº„ì…ˆ 3.ê³±ì…ˆ 4.ë„ˆëˆ—ì…ˆ \n");
+	printf("ì„ íƒ? ");
 	scanf_s("%d", &opt);
-	printf("µÎ °³ÀÇ ½Ç¼ö ÀÔ·Â: ");
+	printf("ë‘ ê°œì˜ ì‹¤ìˆ˜ ì…ë ¥: ");
 	scanf_s("%lf %lf", &num1, &num2);
 
 	if (opt == 1)
@@ -68,11 +68,11 @@ int main()
 	if (opt == 4)
 		result = num1 / num2;
 
-	printf("°á°ú: %f \n", result);
+	printf("ê²°ê³¼: %f \n", result);
 	return 0;
 }
 
-Á¶°Ç¹® ¹İº¹¹® È°¿ë_Mul3Mul4.c
+//ì¡°ê±´ë¬¸ ë°˜ë³µë¬¸ í™œìš©_Mul3Mul4.c
 int main()
 {
 	int num;
@@ -80,23 +80,23 @@ int main()
 	for (num = 1; num < 100; num++) 
 	{
 		if (num % 3 == 0 || num % 4 == 0)
-			printf("3 ¶Ç´Â 4ÀÇ ¹è¼ö: %d \n", num);
+			printf("3 ë˜ëŠ” 4ì˜ ë°°ìˆ˜: %d \n", num);
 	}
 	return 0;
 }
 
-if-else¹®_CalTwo.c
- it eslsÀåÁ¡ if¹®Àº Á¶°ÇÀ» °è¼Ó ºñ±³ÇÏ¿© ºñ±³Àû ´À¸² Áï ¼øÂ÷Á¦¾îÀÎ if else¹®ÀÌ ºü¸£´Ù.
+//if-elseë¬¸_CalTwo.c
+//it eslsì¥ì  ifë¬¸ì€ ì¡°ê±´ì„ ê³„ì† ë¹„êµí•˜ì—¬ ë¹„êµì  ëŠë¦¼ ì¦‰ ìˆœì°¨ì œì–´ì¸ if elseë¬¸ì´ ë¹ ë¥´ë‹¤.
 int main()
 {
 	int opt;
 	double num1, num2;
 	double result;
 
-	printf("1.µ¡¼À 2.»¬¼À 3.°ö¼À 4.³ª´°¼À \n");
-	printf("¼±ÅÃ? ");
+	printf("1.ë§ì…ˆ 2.ëº„ì…ˆ 3.ê³±ì…ˆ 4.ë‚˜ëˆ—ì…ˆ \n");
+	printf("ì„ íƒ? ");
 	scanf_s("%d", &opt);
-	printf("µÎ °³ÀÇ ½Ç¼ö ÀÔ·Â: ");
+	printf("ë‘ ê°œì˜ ì‹¤ìˆ˜ ì…ë ¥: ");
 	scanf_s("%lf %lf", &num1, &num2);
 	
 	if (opt == 1)
@@ -105,10 +105,10 @@ int main()
 		result = num1 - num2;
 	else if (opt == 3)
 		result = num1 * num2;
-	else // else´Â Á¶°Ç ÇÊ¿ä No
+	else // elseëŠ” ì¡°ê±´ í•„ìš” No
 		result = num1 / num2;
 
-	printf("°á°ú: %f \n", result);
+	printf("ê²°ê³¼: %f \n", result);
 	return 0;
 }
 
@@ -116,16 +116,16 @@ ThreeOperand.c
 int main()
 {
 	int num, abs;
-	printf("Á¤¼ö ÀÔ·Â: ");
+	printf("ì •ìˆ˜ ì…ë ¥: ");
 	scanf_s("%d", &num);
 
 	abs = num > 0 ? num : num * (-1);
-	printf("Àı´ì°ª: %d \n", abs);
+	printf("ì ˆëŒê°’: %d \n", abs);
 	return 0;
 }
 
-RealMean.c
-È®ÀÎ ÇØº¸±â
+//RealMean.c
+//í™•ì¸ í•´ë³´ê¸°
 int main()
 {
 	double total = 0.0;
@@ -134,24 +134,24 @@ int main()
 
 	for (; input >= 0.0;) {
 		total += input;
-		printf("½Ç¼ö ÀÔ·Â(minus to quit) : ");
+		printf("ì‹¤ìˆ˜ ì…ë ¥(minus to quit) : ");
 		scanf_s("%lf", &input);
 		num++;
 	}
 
-	printf("Æò±Õ: %f \n", total / (num - 1));
+	printf("í‰ê· : %f \n", total / (num - 1));
 	return 0;
 
 }
 
-¿¹Á¦1
-int main(void)//´ä¾È1
+//ì˜ˆì œ1
+int main(void)//ë‹µì•ˆ1
 {
 	int i = 1;
 
 	while (i < 100) {
 		if (i % 7 == 0 || i % 9 == 0)
-			printf("%2d is 7ÀÇ ¹è¼ö ¶Ç´Â 9ÀÇ ¹è¼ö\n", i);
+			printf("%2d is 7ì˜ ë°°ìˆ˜ ë˜ëŠ” 9ì˜ ë°°ìˆ˜\n", i);
 		i++;
 	}
 
@@ -166,7 +166,7 @@ int main()
 	for (num = 1; num < 100; num++)
 	{
 		while (I < 100 && J < 100) {
-			printf("100ÀÌÇÏÀÇ 7°ú 9ÀÇ ¹è¼ö´Â? %d ¿Í %d\n", I, J);
+			printf("100ì´í•˜ì˜ 7ê³¼ 9ì˜ ë°°ìˆ˜ëŠ”? %d ì™€ %d\n", I, J);
 			num++;
 			I = i * num;
 			J = j * num;
@@ -177,7 +177,7 @@ int main()
 	return 0;
 }
 
-Whenover5000.c
+//Whenover5000.c
 int main(void)
 {
 	int sum = 0, num = 0;
@@ -186,7 +186,7 @@ int main(void)
 	{
 		sum += num;
 		if (sum > 5000)
-			break;//break¹® ½ÇÇà! Áï ¹İº¹¹® Å»Ãâ
+			break;//breakë¬¸ ì‹¤í–‰! ì¦‰ ë°˜ë³µë¬¸ íƒˆì¶œ
 		num++;
 	}
 
@@ -195,7 +195,7 @@ int main(void)
 	return 0;
 }
 
-ExceptMul2Mul3.c
+//ExceptMul2Mul3.c
 int main(void)
 {
 	int num;
@@ -211,8 +211,8 @@ int main(void)
 	return 0;
 }
 
-¿¹Á¦ ¹®Á¦ ±¸±¸´Ü+Æ¯Á¤Á¶°Ç
-´ä¾È1
+//ì˜ˆì œ ë¬¸ì œ êµ¬êµ¬ë‹¨+íŠ¹ì •ì¡°ê±´
+//ë‹µì•ˆ1
 int main(void)
 {
 	int i, j;
@@ -232,7 +232,7 @@ int main()
 	for (cur = 2; cur < 10; cur++)
 	{
 		for (is = 1; is < 10; is++)
-			if (cur % 2 == 0 )// Ãß°¡ ¼öÁ¤ ÇÊ¿ä
+			if (cur % 2 == 0 )// ì¶”ê°€ ìˆ˜ì • í•„ìš”
 			{
 				printf("%d x %d = %d \n", cur, is, cur * is);
 				if (cur == is) break;
@@ -242,13 +242,13 @@ int main()
 	return 0;
 }
 
-switch.c ±âº» ¿¹Á¦
-´ä¾È1
+//switch.c ê¸°ë³¸ ì˜ˆì œ
+//ë‹µì•ˆ1
 int main(void)
 {
 	int score = 0;
 	do {
-		printf("¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		printf("ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		scanf_s("%d", &score);
 	} while (score < 0 || score > 100);
 
@@ -288,7 +288,7 @@ int main(void)
 int main(void)
 {
 	int score = 0;
-	printf("¼ºÀûÀ» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ì„±ì ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf_s("%d", &score);
 	
 	if (score <= 100 && score >= 0) {
@@ -316,7 +316,7 @@ int main(void)
 		}
 	}
 	else {
-		printf("0ºÎÅÍ 100ÀÌÇÏÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À.");
+		printf("0ë¶€í„° 100ì´í•˜ì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤.");
 	}
 	
 	return 0;
